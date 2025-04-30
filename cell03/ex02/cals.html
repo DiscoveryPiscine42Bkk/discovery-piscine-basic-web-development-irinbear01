@@ -9,24 +9,23 @@
 </head>
 <body>
     <h1>My very first calculator</h1>
-    <section class="calculator">
         <form>
-            <input type="number" id="number1">
-            <input type="number" id="number2">
-        </form>
-        <div class="dropdown">
-            <button class="dropdownbtn">choose operators</button>
-            <div class="dropdown-content">
-                <p>+</p>
-                <p>-</p>
-                <p>*</p>
-                <p>/</p>
-                <p>%</p>
-            </div>
-        </div>
-        <button class="submit">Try me!</button>
-    </section>
-        
+            <label for="num1">first number:</label>
+            <input type="number" id="num1">
 
+            <select name="operators" id="operators">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+
+            <label for="num2">second number:</label>
+            <input type="number" id="num2"><br><br>
+        </form>
+
+        <button class="submit" id="submit" onclick="calculate()">Try me!</button>
+        <h3 id="result">Result :</h3>
 </body>
 </html>
