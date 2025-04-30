@@ -22,5 +22,16 @@ function setSizeColor() {
 };
 
 function decreaseSize(){
+    size -= 5;
 
+    if (size < minSize) {
+        size = originalSize;
+    }
+
+    const div = document.getElementById("balloon")
+    div.style.width = size + "px";
+    div.style.height = size + "px";
+
+    colorIndex = (colorIndex - 1) % colors.length;
+    div.style.backgroundColor = colors[colorIndex];
 }
