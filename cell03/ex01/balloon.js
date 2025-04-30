@@ -32,6 +32,6 @@ function decreaseSize(){
     div.style.width = size + "px";
     div.style.height = size + "px";
 
-    colorIndex = (colorIndex - 1) % colors.length;
+    colorIndex = (colorIndex - 1 + colors.length) % colors.length;
     div.style.backgroundColor = colors[colorIndex];
 }
