@@ -1,0 +1,72 @@
+:root {
+    --primary: #AA60C8;
+    --accent: #D69ADE;
+    --light: #EABDE6;
+    --extra-light: #FFDFEF;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--extra-light);
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1rem;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 100px 20px;
+  }
+  
+  #profile {
+    background-color: var(--light);
+    text-align: center;
+  }
+  
+  #profile img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  #experience {
+    background-color: white;
+  }
+  
+  #contact {
+    background-color: var(--extra-light);
+  }
+  
+  h2, h3 {
+    color: var(--primary);
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
