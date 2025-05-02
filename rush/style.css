@@ -70,7 +70,7 @@
   
   h2, h3 {
     color: var(--primary);
-    font-family: fantasy;
+    font-family: Limelight;
   }
   
   ul {
@@ -80,5 +80,9 @@
   .container {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .lead {
+    font-size: 30px;
   }
   
